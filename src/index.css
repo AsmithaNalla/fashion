@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Cinzel", "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-matcha-50: #F3F8F2;
+  --color-matcha-100: #E2EFE0;
+  --color-matcha-200: #C7DEC4;
+  --color-matcha-300: #A5C8A1;
+  --color-matcha-400: #7DAA78;
+  --color-matcha-500: #578852;
+  --color-matcha-600: #42693E;
+  --color-matcha-700: #345230;
+  --color-matcha-800: #293F26;
+  --color-matcha-900: #1F301D;
+  --color-matcha-950: #162215;
+
+  --color-cherry-300: #FFA4B2;
+  --color-cherry-400: #FF6B81;
+  --color-cherry-500: #E63956;
+  --color-cherry-600: #CC2240;
+  --color-cherry-700: #A8132D;
+  --color-cherry-800: #880E23;
+  --color-cherry-900: #6B0819;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #263823;
+  color: #F3F8F2;
+  margin: 0;
+  padding: 0;
+}
+
+.font-serif-luxury {
+  font-family: var(--font-serif);
+}
+
+.font-display-couture {
+  font-family: var(--font-display);
+}
+
+/* Custom smooth scrollbar for matcha theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1F301D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #42693E;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #578852;
+}
+
