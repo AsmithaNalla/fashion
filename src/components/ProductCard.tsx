@@ -86,7 +86,7 @@ export const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
             ) : (
               <>
                 <ShoppingBag className="w-3.5 h-3.5" />
-                <span>Quick Add</span>
+                <span>Add to Bag / Cart</span>
               </>
             )}
           </button>

@@ -185,7 +185,7 @@ export const ProductDetailModal: React.FC = () => {
                 </div>
               </div>
 
-              {/* Action Buttons: Add to Bag & Buy Now */}
+              {/* Action Buttons: Add to Bag & Add to Cart / Order Now */}
               <div className="pt-4 flex flex-col sm:flex-row gap-3">
                 <button
                   onClick={handleAddAndClose}
@@ -194,7 +194,7 @@ export const ProductDetailModal: React.FC = () => {
                   {isAddedFeedback ? (
                     <>
                       <Check className="w-4 h-4 text-white" />
-                      <span>Added to Your Bag</span>
+                      <span>Added to Bag</span>
                     </>
                   ) : (
                     <>
@@ -209,7 +209,7 @@ export const ProductDetailModal: React.FC = () => {
                   className="flex-1 py-3 px-4 bg-[#CC2240] hover:bg-[#A8132D] text-white text-xs font-semibold uppercase tracking-wider rounded-md shadow-md flex items-center justify-center gap-2 transition-colors cursor-pointer"
                 >
                   <Zap className="w-4 h-4" />
-                  <span>Buy Now (COD / UPI)</span>
+                  <span>Add to Cart & Order (COD / UPI)</span>
                 </button>
               </div>
 
