@@ -181,6 +181,19 @@ export const Header: React.FC = () => {
               )}
             </div>
 
+            {/* Live n8n Stylist Concierge Quick Trigger */}
+            <button
+              onClick={() => window.dispatchEvent(new CustomEvent('open-n8n-chat'))}
+              className="p-2 text-[#C7DEC4] hover:text-[#FFA4B2] transition-colors rounded-md hover:bg-[#293F26] flex items-center gap-1 cursor-pointer"
+              aria-label="Open n8n Stylist Concierge"
+              title="Chat with Live n8n Stylist Concierge"
+            >
+              <Sparkles className="w-4 h-4 text-[#FF6B81]" />
+              <span className="hidden md:inline-block text-xs font-medium text-[#FFA4B2]">
+                Stylist Chat
+              </span>
+            </button>
+
             {/* My Orders Button */}
             <button
               onClick={() => setIsOrdersViewOpen(true)}

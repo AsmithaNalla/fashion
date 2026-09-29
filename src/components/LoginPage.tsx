@@ -396,6 +396,30 @@ export const LoginPage: React.FC = () => {
               )}
             </div>
 
+            {/* Box 2.5: Live n8n Chat Stylist Assistance */}
+            <div className="p-4 bg-[#1C2C1A] rounded-xl border border-[#3E5C38] flex items-center justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-[#273B24] border border-[#FF6B81]/40 flex items-center justify-center text-[#FF6B81]">
+                  <Sparkles className="w-4 h-4 text-[#FF6B81]" />
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-[#FFA4B2]">
+                    Need Couture Advice or Sizing Help?
+                  </p>
+                  <p className="text-[11px] text-[#A5C8A1]">
+                    Chat with our live n8n styling assistant.
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => window.dispatchEvent(new CustomEvent('open-n8n-chat'))}
+                className="px-3.5 py-1.5 bg-[#CC2240] hover:bg-[#A8132D] text-white text-xs font-semibold rounded-md shadow-sm transition-colors cursor-pointer shrink-0"
+              >
+                Open Chat
+              </button>
+            </div>
+
             {/* Box 3: Trust & Assurance */}
             <div className="grid grid-cols-2 gap-3 text-xs text-[#A5C8A1]">
               <div className="p-3 bg-[#1C2C1A] rounded-lg border border-[#2D4529] flex items-center gap-2">

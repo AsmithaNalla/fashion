@@ -13,6 +13,7 @@ import { OrdersView } from './components/OrdersView';
 import { OrderSuccessModal } from './components/OrderSuccessModal';
 import { SizeGuideModal } from './components/SizeGuideModal';
 import { BespokeModal } from './components/BespokeModal';
+import { N8nChatWidget } from './components/N8nChatWidget';
 import { Footer } from './components/Footer';
 import { PRODUCTS } from './data/products';
 import { Sparkles, RefreshCw } from 'lucide-react';
@@ -139,6 +140,9 @@ const AppContent: React.FC = () => {
       <OrderSuccessModal />
       <SizeGuideModal />
       <BespokeModal />
+
+      {/* Live n8n Couture Stylist & Webhook Chat Widget */}
+      <N8nChatWidget />
     </>
   );
 };

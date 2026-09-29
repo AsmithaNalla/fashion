@@ -199,6 +199,15 @@ export const Footer: React.FC = () => {
                 Size Chart & Guide
               </button>
             </li>
+            <li>
+              <button
+                onClick={() => window.dispatchEvent(new CustomEvent('open-n8n-chat'))}
+                className="hover:text-[#FFA4B2] transition-colors cursor-pointer flex items-center gap-1 text-[#FFA4B2]"
+              >
+                <Sparkles className="w-3.5 h-3.5 text-[#FF6B81]" />
+                <span>Live n8n Stylist Concierge</span>
+              </button>
+            </li>
           </ul>
         </div>
 
